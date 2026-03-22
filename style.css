@@ -251,6 +251,127 @@ margin-top:5px;
 line-height:1.6;
 }
 
+.collab-section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.collab-subtext {
+  color: #aaa;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+/* Form Layout */
+.collab-form {
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input styling */
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.05);
+  color: black;
+  font-size: 1rem;
+  outline: none;
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+}
+
+/* Focus effect */
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border: 1px solid #7f5af0;
+  box-shadow: 0 0 10px #7f5af055;
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(90deg, #7f5af0, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Button */
+.gradient-btn {
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #7f5af0, #00c6ff);
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.gradient-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #7f5af088;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  background: linear-gradient(90deg, #7f5af0, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Input styling FIXED */
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.05);
+  color: white; 
+  font-size: 1rem;
+  outline: none;
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+}
+
+/*  CUSTOM SELECT */
+.gradient-select {
+  appearance: none;
+  cursor: pointer;
+
+  background: rgba(0,0,0,0.6);
+  color: white;
+}
+
+/* Placeholder gradient effect */
+.gradient-select:invalid {
+  background: linear-gradient(90deg, #7f5af0, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Dropdown options */
+.gradient-select option {
+  background: #111;
+  color: white;
+}
+
+/* Custom arrow */
+.gradient-select {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='20' viewBox='0 0 20 20' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M5 7l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 16px;
+}
+
 
 /* CONTACT */
 
